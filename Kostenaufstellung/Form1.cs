@@ -492,17 +492,17 @@ namespace Kostenaufstellung
 
                     if (Wasser_aweleble.Checked)
                     {
-                        MPumpe_Div.Value = 0;
-                        MPumpe_Div.ReadOnly = false;
-                        MPumpe_Div.Enabled = true;
-
-                        RPumpe_Div.Value = 0;
-                        RPumpe_Div.ReadOnly = false;
-                        RPumpe_Div.Enabled = true;
-
-                        TPumpe_Div.Value = 100;
-                        TPumpe_Div.ReadOnly = false;
-                        TPumpe_Div.Enabled = true;
+                        //MPumpe_Div.Value = 0;
+                        //MPumpe_Div.ReadOnly = false;
+                        //MPumpe_Div.Enabled = true;
+                        //
+                        //RPumpe_Div.Value = 0;
+                        //RPumpe_Div.ReadOnly = false;
+                        //RPumpe_Div.Enabled = true;
+                        //
+                        //TPumpe_Div.Value = 100;
+                        //TPumpe_Div.ReadOnly = false;
+                        //TPumpe_Div.Enabled = true;
 
                         Wasser_Extraktor_Div.Value = 0;
                         Wasser_Extraktor_Div.ReadOnly = false;
@@ -510,19 +510,19 @@ namespace Kostenaufstellung
                     }
                     else
                     {
-                        MPumpe_Div.Value = 0;
-                        MPumpe_Div.ReadOnly = true;
-                        MPumpe_Div.Enabled = false;
+                        //MPumpe_Div.Value = 0;
+                        //MPumpe_Div.ReadOnly = true;
+                        //MPumpe_Div.Enabled = false;
+                        //
+                        //RPumpe_Div.Value = 0;
+                        //RPumpe_Div.ReadOnly = true;
+                        //RPumpe_Div.Enabled = false;
+                        //
+                        //TPumpe_Div.Value = 0;
+                        //TPumpe_Div.ReadOnly = true;
+                        //TPumpe_Div.Enabled = false;
 
-                        RPumpe_Div.Value = 0;
-                        RPumpe_Div.ReadOnly = true;
-                        RPumpe_Div.Enabled = false;
-
-                        TPumpe_Div.Value = 0;
-                        TPumpe_Div.ReadOnly = true;
-                        TPumpe_Div.Enabled = false;
-
-                        Wasser_Extraktor_Div.Value = 100;
+                        Wasser_Extraktor_Div.Value = 0;
                         Wasser_Extraktor_Div.ReadOnly = true;
                         Wasser_Extraktor_Div.Enabled = false;
                     }
@@ -4767,12 +4767,12 @@ namespace Kostenaufstellung
                         if (Minke > 0)
                         {
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Minke * (HR_S / Truppe_S));
-                            Luftfabrik_L_Orange += Math.Ceiling(Minke * (Risso_S / Truppe_S));
+                            Wasserfabrik_W_Orange += Math.Ceiling(Minke * (Risso_S / Truppe_S));
                         }
                         if (Oxynoe > 0)
                         {
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Oxynoe * (HR_S / Truppe_S));
-                            Luftfabrik_L_Gruen += Math.Ceiling(Oxynoe * (Retusa_S / Truppe_S));
+                            Wasserfabrik_W_Gruen += Math.Ceiling(Oxynoe * (Retusa_S / Truppe_S));
                         }
                         if (Horizont > 0)
                         {
@@ -4809,13 +4809,13 @@ namespace Kostenaufstellung
                         {
                             MultiplikativerRekonstrukeur_Zw += Math.Ceiling(Bryde * (MR_S / Truppe_S));
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Bryde * (HR_S / Truppe_S));
-                            Luftfabrik_L_Orange += Math.Ceiling(Bryde * (Risso_S / Truppe_S));
+                            Wasserfabrik_W_Orange += Math.Ceiling(Bryde * (Risso_S / Truppe_S));
                         }
                         if (Cyerce > 0)
                         {
                             MultiplikativerRekonstrukeur_Zw += Math.Ceiling(Cyerce * (MR_S / Truppe_S));
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Cyerce * (HR_S / Truppe_S));
-                            Luftfabrik_L_Gruen += Math.Ceiling(Cyerce * (Retusa_S / Truppe_S));
+                            Wasserfabrik_W_Gruen += Math.Ceiling(Cyerce * (Retusa_S / Truppe_S));
                         }
                         if (Zenit > 0)
                         {
@@ -4858,14 +4858,14 @@ namespace Kostenaufstellung
                             ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Sei * (ER_S / Truppe_S));
                             MultiplikativerRekonstrukeur_Zw += Math.Ceiling(Sei * (MR_S / Truppe_S));
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Sei * (HR_S / Truppe_S));
-                            Luftfabrik_L_Orange += Math.Ceiling(Sei * (Risso_S / Truppe_S));
+                            Wasserfabrik_W_Orange += Math.Ceiling(Sei * (Risso_S / Truppe_S));
                         }
                         if (Aegires > 0)
                         {
                             ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Aegires * (ER_S / Truppe_S));
                             MultiplikativerRekonstrukeur_Zw += Math.Ceiling(Aegires * (MR_S / Truppe_S));
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Aegires * (HR_S / Truppe_S));
-                            Luftfabrik_L_Gruen += Math.Ceiling(Aegires * (Retusa_S / Truppe_S));
+                            Wasserfabrik_W_Gruen += Math.Ceiling(Aegires * (Retusa_S / Truppe_S));
                         }
                         if (Antumbra > 0)
                         {
@@ -4887,7 +4887,7 @@ namespace Kostenaufstellung
                         if (Reign > 0)
                         {
                             TretrativerRekonstrukeur_Zw += Math.Ceiling(Reign * (TR_S / Truppe_S));
-                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Reign * (ER_S / Truppe_S));
+                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Reign * (TR_S / Truppe_S));
                             MultiplikativerRekonstrukeur_Zw += Math.Ceiling(Reign * (MR_S / Truppe_S));
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Reign * (HR_S / Truppe_S));
                             Bodenfabrik_B_Orange += Math.Ceiling(Reign * (Dagger_S / Truppe_S));
@@ -4895,7 +4895,7 @@ namespace Kostenaufstellung
                         if (Korvus > 0)
                         {
                             TretrativerRekonstrukeur_Zw += Math.Ceiling(Korvus * (TR_S / Truppe_S));
-                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Korvus * (ER_S / Truppe_S));
+                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Korvus * (TR_S / Truppe_S));
                             MultiplikativerRekonstrukeur_Zw += Math.Ceiling(Korvus * (MR_S / Truppe_S));
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Korvus * (HR_S / Truppe_S));
                             Bodenfabrik_B_Gruen += Math.Ceiling(Korvus * (Nova_S / Truppe_S));
@@ -4903,7 +4903,7 @@ namespace Kostenaufstellung
                         if (Toxopid > 0)
                         {
                             TretrativerRekonstrukeur_Zw += Math.Ceiling(Toxopid * (TR_S / Truppe_S));
-                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Toxopid * (ER_S / Truppe_S));
+                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Toxopid * (TR_S / Truppe_S));
                             MultiplikativerRekonstrukeur_Zw += Math.Ceiling(Toxopid * (MR_S / Truppe_S));
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Toxopid * (HR_S / Truppe_S));
                             Bodenfabrik_B_Lila += Math.Ceiling(Toxopid * (Crawler_S / Truppe_S));
@@ -4911,23 +4911,23 @@ namespace Kostenaufstellung
                         if (Omura > 0)
                         {
                             TretrativerRekonstrukeur_Zw += Math.Ceiling(Omura * (TR_S / Truppe_S));
-                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Omura * (ER_S / Truppe_S));
+                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Omura * (TR_S / Truppe_S));
                             MultiplikativerRekonstrukeur_Zw += Math.Ceiling(Omura * (MR_S / Truppe_S));
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Omura * (HR_S / Truppe_S));
-                            Luftfabrik_L_Orange += Math.Ceiling(Omura * (Risso_S / Truppe_S));
+                            Wasserfabrik_W_Orange += Math.Ceiling(Omura * (Risso_S / Truppe_S));
                         }
                         if (Navanax > 0)
                         {
                             TretrativerRekonstrukeur_Zw += Math.Ceiling(Navanax * (TR_S / Truppe_S));
-                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Navanax * (ER_S / Truppe_S));
+                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Navanax * (TR_S / Truppe_S));
                             MultiplikativerRekonstrukeur_Zw += Math.Ceiling(Navanax * (MR_S / Truppe_S));
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Navanax * (HR_S / Truppe_S));
-                            Luftfabrik_L_Gruen += Math.Ceiling(Navanax * (Retusa_S / Truppe_S));
+                            Wasserfabrik_W_Gruen += Math.Ceiling(Navanax * (Retusa_S / Truppe_S));
                         }
                         if (Eclipse > 0)
                         {
                             TretrativerRekonstrukeur_Zw += Math.Ceiling(Eclipse * (TR_S / Truppe_S));
-                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Eclipse * (ER_S / Truppe_S));
+                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Eclipse * (TR_S / Truppe_S));
                             MultiplikativerRekonstrukeur_Zw += Math.Ceiling(Eclipse * (MR_S / Truppe_S));
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Eclipse * (HR_S / Truppe_S));
                             Luftfabrik_L_Orange += Math.Ceiling(Eclipse * (Flare_S / Truppe_S));
@@ -4935,7 +4935,7 @@ namespace Kostenaufstellung
                         if (Okt > 0)
                         {
                             TretrativerRekonstrukeur_Zw += Math.Ceiling(Okt * (TR_S / Truppe_S));
-                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Okt * (ER_S / Truppe_S));
+                            ExponenziellerRekonstrukeur_Zw += Math.Ceiling(Okt * (TR_S / Truppe_S));
                             MultiplikativerRekonstrukeur_Zw += Math.Ceiling(Okt * (MR_S / Truppe_S));
                             HinzufügenderRekonstrukeur_Zw += Math.Ceiling(Okt * (HR_S / Truppe_S));
                             Luftfabrik_L_Gruen += Math.Ceiling(Okt * (Mono_S / Truppe_S));
@@ -6707,10 +6707,17 @@ namespace Kostenaufstellung
                             //Wasser = 0;
                             Wasser_Pr = 0;
                         }
-                        Wasser_MP_Value = Math.Ceiling((Wasser + Wasser_Pr) / C_MP_Div * MP_Div);
-                        Wasser_RP_Value = Math.Ceiling((Wasser + Wasser_Pr) / C_RP_Div * RP_Div);
-                        Wasser_TP_Value = Math.Ceiling((Wasser + Wasser_Pr) / C_TP_Div * TP_Div);
-                        WasserExtractor_Pr = Convert.ToInt64(Math.Ceiling((Convert.ToDouble(Wasser + Wasser_Pr) * (1 - MP_Div - RP_Div - TP_Div)) / 6.6));
+                        if (Wasser_aweleble.Checked)
+                        {
+                            Wasser_MP_Value = Math.Ceiling((Wasser + Wasser_Pr) / C_MP_Div * MP_Div);
+                            Wasser_RP_Value = Math.Ceiling((Wasser + Wasser_Pr) / C_RP_Div * RP_Div);
+                            Wasser_TP_Value = Math.Ceiling((Wasser + Wasser_Pr) / C_TP_Div * TP_Div);
+                            WasserExtractor_Pr = Convert.ToInt64(Math.Ceiling((Convert.ToDouble(Wasser + Wasser_Pr) * (1 - MP_Div - RP_Div - TP_Div)) / 6.6));
+                        }
+                        else
+                        {
+                            WasserExtractor_Pr = Convert.ToInt64(Math.Ceiling(Convert.ToDouble(Wasser + Wasser_Pr) / 6.6));
+                        }
                     }
                     //Öl
                     if (((Öl + Öl_Pr) > Öl_Er + 0.01) || ((Öl + Öl_Pr) > (Öl_Er + 200)))
@@ -10660,6 +10667,11 @@ namespace Kostenaufstellung
 
         private void Pumpen_Div_ValueChanged(short a)
         {
+            if (Wasser_Extraktor_Div.ReadOnly == true)
+            {
+                Wasser_Extraktor_Div.Value = 0;
+            }
+
             //Pumpen
             double MP_Div = Convert.ToDouble(MPumpe_Div.Value),
                    RP_Div = Convert.ToDouble(RPumpe_Div.Value),
